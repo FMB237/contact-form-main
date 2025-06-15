@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Contact form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+
+<body>
+  <form action="" id="contact-form" novalidate>
+    <div id="successdiv" style="display: none;" >
+
+    </div>
+
+    <h1>Contact Us</h1>
+ <!-- Let start adding the input forms 👍 -->
+  <div class="Names">
+    <div class="FirstName">
+       <label for="FirstName">First Name *</label> <br>
+       <input type="text" name="FirstName" id="FirstName" required aria-required="true" >
+     <p id="FirstNameError" class="errormsg"></p>
+    </div>
+
+     <div class="LastName">
+       <label for="LastName">Last Name *</label> <br>
+       <input type="text" name="LastName" id="LastName" required aria-required="true">
+      <p class="errormsg" id="LastNameError"></p>
+    </div>
+
+  </div>
+  <!-- Now let add the email div 👍 -->
+   <div class="Emailform">
+       <label for="Email">Email *</label> <br>
+       <input type="email" name="email" id="email" required aria-required="true">
+      <p class="errormsg" id="EmailError"></p>
+    </div>
+ <!-- Now let add the queryform div 👍 -->
+   <div class="QueryForm">
+
+    <div class="query-type">
+  <label for="query type">Query type *</label>
+    </div>
+    <!-- Now let add the Queries div 👍 -->
+    <div class="Queries">
+      <div class="MyQuery">
+        <input type="radio" id="query-entity" value="general" name="queryType"  class="queryTypes" required aria-required="true">
+        <label for="query-entity">General-entity</label>
+      </div>
+      <div class="MyQuery">
+       <input type="radio" id="Support-Resquest" value="support" name="queryType"  class="queryTypes" required aria-required="true">
+        <label for="Support Resquest">Support Resquest</label>
+     </div>
+     </div>
+     <p class="errormsg" id="QueryError"></p>
+    </div>
+    <!-- Now let add the message div 👍 -->
+     <div class="message">
+      <label for="Message">Message *</label>
+      <textarea name="Message" id="Message" maxlength="250" required id="textearea" aria-required="true"></textarea>
+      <p class="errormsg" id="MessageError"></p>
+     </div>
+
+<!-- Now let add the message div 👍 -->
+   <div class="answer">
+    <input type="checkbox" name="validation" id="validationbox">
+  <label> I consent to being contacted by the team</label>
+   </div>
+    <p class="errormsg" id="ConsentError"></p>
+  
+
+    <div class="Submission">
+       <button type="submit" id="SubmitBtn">Submit</button>
+    </div>
+  
+  </form>
+  
+
+   
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="https:://Github//FMB237">Fouenang Miguel Bruce</a>.
+  </div>
+ </section>
+ 
+ <script src="script.js"></script>
+</body>
+</html>
