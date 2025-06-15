@@ -226,8 +226,8 @@ textarea{
 }
 @media (min-width:1440px){
   form{
-    height: 53rem;
-    width: 40%;
+    height: 56rem;
+    width: 50%;
     margin: 1rem;
     border-radius: 1rem;
     box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.2);
